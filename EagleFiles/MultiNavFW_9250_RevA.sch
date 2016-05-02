@@ -11921,15 +11921,15 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 </class>
 </classes>
 <parts>
-<part name="U$3" library="Ava" deviceset="UBLOX_NEO-6" device=""/>
+<part name="U3" library="Ava" deviceset="UBLOX_NEO-6" device=""/>
 <part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0402" value="27nH"/>
-<part name="R3" library="adafruit" deviceset="R-US_" device="R0603" value="10"/>
+<part name="R7" library="adafruit" deviceset="R-US_" device="R0603" value="10"/>
 <part name="X1" library="adafruit" deviceset="ANTENNA_U.FL" device=""/>
-<part name="IC1" library="microchip" deviceset="24*" device="SN" technology="AA32A"/>
-<part name="USBLC6" library="_CustomParts" deviceset="USBLC6-2" device=""/>
-<part name="R4" library="adafruit" deviceset="R-US_" device="R0603" value="20"/>
+<part name="U4" library="microchip" deviceset="24*" device="SN" technology="AA32A"/>
+<part name="U1" library="_CustomParts" deviceset="USBLC6-2" device=""/>
 <part name="R5" library="adafruit" deviceset="R-US_" device="R0603" value="20"/>
-<part name="R6" library="adafruit2" deviceset="R-US_" device="R0603" value="680"/>
+<part name="R6" library="adafruit" deviceset="R-US_" device="R0603" value="20"/>
+<part name="R1" library="adafruit2" deviceset="R-US_" device="R0603" value="680"/>
 <part name="LED5" library="adafruit" deviceset="LED" device="CHIPLED_0603" value="YELLOW"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE-SCHOTTKY" device="-BAT20J" value="BAT20J"/>
 <part name="C6" library="adafruit" deviceset="C-US" device="C0603" value="10nF"/>
@@ -11941,18 +11941,18 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C1" library="adafruit" deviceset="C-US" device="C0603" value="4.7u"/>
 <part name="JP3" library="daspilker" deviceset="USB-RECEPTABLE" device=""/>
 <part name="LED2" library="adafruit" deviceset="LED" device="CHIPLED_0603" value="RED"/>
-<part name="R1" library="adafruit2" deviceset="R-US_" device="R0603" value="680"/>
+<part name="R4" library="adafruit2" deviceset="R-US_" device="R0603" value="680"/>
 <part name="H1" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="H2" library="holes" deviceset="MOUNT-PAD-ROUND" device="2.8"/>
 <part name="FRAME2" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="SJ1" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO" value=""/>
 <part name="SJ2" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO" value=""/>
 <part name="R2" library="adafruit2" deviceset="R-US_" device="R0603" value="4.7k"/>
-<part name="R7" library="adafruit2" deviceset="R-US_" device="R0603" value="4.7k"/>
+<part name="R3" library="adafruit2" deviceset="R-US_" device="R0603" value="4.7k"/>
 <part name="C4" library="adafruit" deviceset="C-US" device="C0603" value="10n"/>
 <part name="C2" library="adafruit" deviceset="C-US" device="C0603" value="100n"/>
 <part name="C5" library="adafruit" deviceset="C-US" device="C0603" value="100n"/>
-<part name="U$2" library="_CustomParts" deviceset="MPU-9250" device=""/>
+<part name="U2" library="_CustomParts" deviceset="MPU-9250" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11980,17 +11980,18 @@ pin on the Feather serves as Serial RX
 <wire x1="172.72" y1="45.72" x2="4.064" y2="45.72" width="0.1524" layer="94"/>
 <text x="10.16" y="35.56" size="5.08" layer="97">Power / LEDs</text>
 <text x="60.96" y="25.4" size="1.778" layer="97">Position near U-Blox</text>
+<text x="203.2" y="149.86" size="1.778" layer="97">USBLC6</text>
 </plain>
 <instances>
-<instance part="U$3" gate="G$1" x="66.04" y="172.72"/>
+<instance part="U3" gate="G$1" x="66.04" y="172.72"/>
 <instance part="L1" gate="G$1" x="116.84" y="175.26"/>
-<instance part="R3" gate="G$1" x="111.76" y="165.1" rot="R180"/>
+<instance part="R7" gate="G$1" x="111.76" y="165.1" rot="R180"/>
 <instance part="X1" gate="G$1" x="124.46" y="187.96" rot="R180"/>
-<instance part="IC1" gate="G$1" x="160.02" y="139.7"/>
-<instance part="USBLC6" gate="G$1" x="208.28" y="162.56"/>
-<instance part="R4" gate="G$1" x="200.66" y="185.42" rot="R180"/>
-<instance part="R5" gate="G$1" x="187.96" y="182.88" rot="R180"/>
-<instance part="R6" gate="G$1" x="121.92" y="25.4" rot="R90"/>
+<instance part="U4" gate="G$1" x="160.02" y="139.7"/>
+<instance part="U1" gate="G$1" x="208.28" y="162.56"/>
+<instance part="R5" gate="G$1" x="200.66" y="185.42" rot="R180"/>
+<instance part="R6" gate="G$1" x="187.96" y="182.88" rot="R180"/>
+<instance part="R1" gate="G$1" x="121.92" y="25.4" rot="R90"/>
 <instance part="LED5" gate="G$1" x="121.92" y="15.24"/>
 <instance part="D1" gate="G$1" x="165.1" y="187.96" rot="R180"/>
 <instance part="C6" gate="G$1" x="73.66" y="17.78"/>
@@ -12002,7 +12003,7 @@ pin on the Feather serves as Serial RX
 <instance part="C1" gate="G$1" x="45.72" y="17.78"/>
 <instance part="JP3" gate="G$1" x="246.38" y="182.88"/>
 <instance part="LED2" gate="G$1" x="137.16" y="15.24"/>
-<instance part="R1" gate="G$1" x="137.16" y="25.4" rot="R90"/>
+<instance part="R4" gate="G$1" x="137.16" y="25.4" rot="R90"/>
 <instance part="H1" gate="G$1" x="187.96" y="43.18"/>
 <instance part="H2" gate="G$1" x="238.76" y="43.18"/>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -12010,33 +12011,33 @@ pin on the Feather serves as Serial RX
 <instance part="SJ1" gate="1" x="226.06" y="58.42"/>
 <instance part="SJ2" gate="1" x="233.68" y="60.96"/>
 <instance part="R2" gate="G$1" x="129.54" y="81.28" rot="R90"/>
-<instance part="R7" gate="G$1" x="144.78" y="81.28" rot="R90"/>
+<instance part="R3" gate="G$1" x="144.78" y="81.28" rot="R90"/>
 <instance part="C4" gate="G$1" x="38.1" y="71.12"/>
 <instance part="C2" gate="G$1" x="53.34" y="63.5"/>
 <instance part="C5" gate="G$1" x="60.96" y="17.78"/>
-<instance part="U$2" gate="G$1" x="91.44" y="81.28"/>
+<instance part="U2" gate="G$1" x="91.44" y="81.28"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="13_GND"/>
+<pinref part="U3" gate="G$1" pin="13_GND"/>
 <wire x1="35.56" y1="180.34" x2="27.94" y2="180.34" width="0.1524" layer="91"/>
 <label x="25.4" y="180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="24_GND"/>
+<pinref part="U3" gate="G$1" pin="24_GND"/>
 <wire x1="35.56" y1="124.46" x2="27.94" y2="124.46" width="0.1524" layer="91"/>
 <label x="25.4" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="10_GND"/>
+<pinref part="U3" gate="G$1" pin="10_GND"/>
 <wire x1="91.44" y1="170.18" x2="93.98" y2="170.18" width="0.1524" layer="91"/>
 <label x="96.52" y="170.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="12_GND"/>
+<pinref part="U3" gate="G$1" pin="12_GND"/>
 <wire x1="91.44" y1="180.34" x2="93.98" y2="180.34" width="0.1524" layer="91"/>
 <label x="96.52" y="180.34" size="1.778" layer="95"/>
 </segment>
@@ -12051,29 +12052,29 @@ pin on the Feather serves as Serial RX
 <label x="129.54" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="167.64" y1="129.54" x2="167.64" y2="127" width="0.1524" layer="91"/>
 <label x="167.64" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="WP"/>
+<pinref part="U4" gate="G$1" pin="WP"/>
 <wire x1="147.32" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="144.78" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A2"/>
+<pinref part="U4" gate="G$1" pin="A2"/>
 <wire x1="144.78" y1="139.7" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="137.16" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="134.62" x2="144.78" y2="127" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="139.7" x2="144.78" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A1"/>
+<pinref part="U4" gate="G$1" pin="A1"/>
 <wire x1="147.32" y1="137.16" x2="144.78" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="A0"/>
+<pinref part="U4" gate="G$1" pin="A0"/>
 <wire x1="147.32" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
 <label x="144.78" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="238.76" y1="177.8" x2="193.04" y2="177.8" width="0.1524" layer="91"/>
 <label x="172.72" y="177.8" size="1.778" layer="95"/>
-<pinref part="USBLC6" gate="G$1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="193.04" y1="177.8" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="162.56" x2="193.04" y2="177.8" width="0.1524" layer="91"/>
@@ -12110,22 +12111,22 @@ pin on the Feather serves as Serial RX
 <label x="53.34" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="RESV3"/>
+<pinref part="U2" gate="G$1" pin="RESV3"/>
 <wire x1="109.22" y1="83.82" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
 <label x="111.76" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
 <wire x1="109.22" y1="78.74" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
 <label x="111.76" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="FSYNC"/>
+<pinref part="U2" gate="G$1" pin="FSYNC"/>
 <wire x1="73.66" y1="68.58" x2="71.12" y2="68.58" width="0.1524" layer="91"/>
 <label x="63.5" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="AD0/SDO"/>
+<pinref part="U2" gate="G$1" pin="AD0/SDO"/>
 <wire x1="73.66" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
 <label x="63.5" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -12156,17 +12157,17 @@ pin on the Feather serves as Serial RX
 </net>
 <net name="33V" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="23_VCC"/>
+<pinref part="U3" gate="G$1" pin="23_VCC"/>
 <wire x1="35.56" y1="129.54" x2="27.94" y2="129.54" width="0.1524" layer="91"/>
 <label x="25.4" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="7_VDDUSB"/>
+<pinref part="U3" gate="G$1" pin="7_VDDUSB"/>
 <wire x1="91.44" y1="154.94" x2="93.98" y2="154.94" width="0.1524" layer="91"/>
 <label x="96.52" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="VCC"/>
+<pinref part="U4" gate="G$1" pin="VCC"/>
 <wire x1="167.64" y1="152.4" x2="167.64" y2="154.94" width="0.1524" layer="91"/>
 <label x="167.64" y="154.94" size="1.778" layer="95"/>
 </segment>
@@ -12176,7 +12177,7 @@ pin on the Feather serves as Serial RX
 <label x="182.88" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="30.48" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
 <label x="137.16" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -12186,22 +12187,22 @@ pin on the Feather serves as Serial RX
 <label x="129.54" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="86.36" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
 <label x="144.78" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="NCS"/>
+<pinref part="U2" gate="G$1" pin="NCS"/>
 <wire x1="109.22" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
 <label x="111.76" y="88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VDD"/>
+<pinref part="U2" gate="G$1" pin="VDD"/>
 <wire x1="109.22" y1="66.04" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 <label x="111.76" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VDDIO"/>
+<pinref part="U2" gate="G$1" pin="VDDIO"/>
 <label x="63.5" y="76.2" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="73.66" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
@@ -12211,7 +12212,7 @@ pin on the Feather serves as Serial RX
 <wire x1="73.66" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="RESV1"/>
+<pinref part="U2" gate="G$1" pin="RESV1"/>
 <wire x1="73.66" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <label x="66.04" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -12232,31 +12233,31 @@ pin on the Feather serves as Serial RX
 </net>
 <net name="SDA_UBLOX" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="18_SDA2"/>
+<pinref part="U3" gate="G$1" pin="18_SDA2"/>
 <wire x1="35.56" y1="154.94" x2="27.94" y2="154.94" width="0.1524" layer="91"/>
 <label x="17.78" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SDA"/>
+<pinref part="U4" gate="G$1" pin="SDA"/>
 <wire x1="175.26" y1="139.7" x2="177.8" y2="139.7" width="0.1524" layer="91"/>
 <label x="177.8" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_UBLOX" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="19_SCL2"/>
+<pinref part="U3" gate="G$1" pin="19_SCL2"/>
 <wire x1="35.56" y1="149.86" x2="27.94" y2="149.86" width="0.1524" layer="91"/>
 <label x="17.78" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="SCL"/>
+<pinref part="U4" gate="G$1" pin="SCL"/>
 <wire x1="147.32" y1="147.32" x2="144.78" y2="147.32" width="0.1524" layer="91"/>
 <label x="129.54" y="147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PPS_RAW" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="3_TIMEPULSE"/>
+<pinref part="U3" gate="G$1" pin="3_TIMEPULSE"/>
 <wire x1="91.44" y1="134.62" x2="93.98" y2="134.62" width="0.1524" layer="91"/>
 <label x="96.52" y="134.62" size="1.778" layer="95"/>
 </segment>
@@ -12266,49 +12267,49 @@ pin on the Feather serves as Serial RX
 <label x="208.28" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="30.48" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
 <label x="121.92" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_DM" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="5_USB_DM"/>
+<pinref part="U3" gate="G$1" pin="5_USB_DM"/>
 <wire x1="91.44" y1="144.78" x2="93.98" y2="144.78" width="0.1524" layer="91"/>
 <label x="96.52" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="185.42" x2="172.72" y2="185.42" width="0.1524" layer="91"/>
 <label x="172.72" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="USB_DP" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="6_USB_DP"/>
+<pinref part="U3" gate="G$1" pin="6_USB_DP"/>
 <wire x1="91.44" y1="149.86" x2="93.98" y2="149.86" width="0.1524" layer="91"/>
 <label x="96.52" y="149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="182.88" x2="172.72" y2="182.88" width="0.1524" layer="91"/>
 <label x="172.72" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPS_BIAS" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="9_VCC_RF"/>
+<pinref part="U3" gate="G$1" pin="9_VCC_RF"/>
 <wire x1="91.44" y1="165.1" x2="93.98" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="8_RESERVED"/>
+<pinref part="U3" gate="G$1" pin="8_RESERVED"/>
 <wire x1="91.44" y1="160.02" x2="93.98" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="160.02" x2="93.98" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="93.98" y1="165.1" x2="106.68" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPS_RF" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="11_RF_IN"/>
+<pinref part="U3" gate="G$1" pin="11_RF_IN"/>
 <label x="96.52" y="175.26" size="1.778" layer="95"/>
 <wire x1="91.44" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="175.26" x2="111.76" y2="187.96" width="0.1524" layer="91"/>
@@ -12321,14 +12322,14 @@ pin on the Feather serves as Serial RX
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="165.1" x2="116.84" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="21_RXD1"/>
+<pinref part="U3" gate="G$1" pin="21_RXD1"/>
 <wire x1="35.56" y1="139.7" x2="27.94" y2="139.7" width="0.1524" layer="91"/>
 <label x="25.4" y="139.7" size="1.778" layer="95"/>
 </segment>
@@ -12340,7 +12341,7 @@ pin on the Feather serves as Serial RX
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="20_TXD1"/>
+<pinref part="U3" gate="G$1" pin="20_TXD1"/>
 <wire x1="35.56" y1="144.78" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
 <label x="25.4" y="144.78" size="1.778" layer="95"/>
 </segment>
@@ -12353,7 +12354,7 @@ pin on the Feather serves as Serial RX
 <net name="USB_VIN" class="0">
 <segment>
 <label x="172.72" y="187.96" size="1.778" layer="95"/>
-<pinref part="USBLC6" gate="G$1" pin="VCC"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="220.98" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="162.56" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="228.6" y1="187.96" x2="167.64" y2="187.96" width="0.1524" layer="91"/>
@@ -12366,7 +12367,7 @@ pin on the Feather serves as Serial RX
 <segment>
 <wire x1="238.76" y1="185.42" x2="226.06" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="185.42" x2="226.06" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="USBLC6" gate="G$1" pin="IO22"/>
+<pinref part="U1" gate="G$1" pin="IO22"/>
 <wire x1="226.06" y1="157.48" x2="220.98" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="D-"/>
 </segment>
@@ -12375,33 +12376,33 @@ pin on the Feather serves as Serial RX
 <segment>
 <wire x1="238.76" y1="182.88" x2="223.52" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="182.88" x2="223.52" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="USBLC6" gate="G$1" pin="IO12"/>
+<pinref part="U1" gate="G$1" pin="IO12"/>
 <wire x1="223.52" y1="167.64" x2="220.98" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="D+"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="USBLC6" gate="G$1" pin="IO11"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="IO11"/>
 <wire x1="195.58" y1="167.64" x2="195.58" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="182.88" x2="193.04" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="USBLC6" gate="G$1" pin="IO21"/>
+<pinref part="U1" gate="G$1" pin="IO21"/>
 <wire x1="195.58" y1="157.48" x2="190.5" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="157.48" x2="190.5" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="175.26" x2="208.28" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="175.26" x2="208.28" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="185.42" x2="205.74" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="20.32" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="LED5" gate="G$1" pin="A"/>
 </segment>
@@ -12422,7 +12423,7 @@ pin on the Feather serves as Serial RX
 <net name="N$9" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="137.16" y1="17.78" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -12462,7 +12463,7 @@ pin on the Feather serves as Serial RX
 <label x="129.54" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="SDA/SDI"/>
+<pinref part="U2" gate="G$1" pin="SDA/SDI"/>
 <wire x1="109.22" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 <label x="111.76" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -12474,12 +12475,12 @@ pin on the Feather serves as Serial RX
 <label x="228.6" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="76.2" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
 <label x="144.78" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="SCL/SCLK"/>
+<pinref part="U2" gate="G$1" pin="SCL/SCLK"/>
 <wire x1="109.22" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
 <label x="111.76" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -12498,7 +12499,7 @@ pin on the Feather serves as Serial RX
 <label x="208.28" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="INT"/>
+<pinref part="U2" gate="G$1" pin="INT"/>
 <wire x1="73.66" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <label x="60.96" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -12512,7 +12513,7 @@ pin on the Feather serves as Serial RX
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="REGOUT"/>
+<pinref part="U2" gate="G$1" pin="REGOUT"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="71.12" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
